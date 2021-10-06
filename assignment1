@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Demo</title>
+    </head>
+    <body>
+        <!-- action specifies where the data of the form wil be submitted for further processing. 
+            it is currently empty and submit button breaks
+        
+        -->
+
+        
+            <!-- For method. POST is more secure, the form data is not visible in the URL unlike GET. By default it is GET-->
+        <form action="/exampleFile.php" method ="POST">
+            <!-- text box form-->
+            <label for="userName">Please Enter User Name:</label>
+            <input type="text" name="userName"/>
+
+
+            <br/>
+            <label for="age">Please Enter Age:</label>
+            <input type="number" name="age"/>
+
+
+            <!-- value attribute has a preprogrammed amount-->
+            <br/>
+            <label for="age">Please Enter Age:</label>
+            <input type="number" name="age" value="25"/>
+
+             <!-- Placeholder attribute has a value that changes when selected-->
+             <br/>
+             <label for="age">Please Enter Age:</label>
+             <input type="number" name="age" placeholder="Enter your Age"/>
+
+             <!-- required attribute makes you submit something. min and max specifies a minimum or maximum value-->
+ 
+
+
+
+            <!-- password box form, not encrypted. only protects from visual identification-->
+            <br/>
+            <label for="password">Please Enter Password:</label>
+            <input type="password" name="password"/>
+
+            <!-- radio used to give the user only 1 option to select-->
+            <!-- the name determiens if the radio are in the same grouping-->
+
+            <br/> 
+            <label for ="gender">Gender: </label>
+            <input type="radio" name = "gender"/>Male
+            <input type="radio" name = "gender"/>Female
+
+            <!-- Use checkbox to allow user to select multiple-->
+            <br/>
+            Hobbies
+            <input type="checkbox" name ="hobbies"/> Games
+            <input type="checkbox" name ="hobbies"/> Eating
+            <input type="checkbox" name ="hobbies"/> Option3
+            <input type="checkbox" name ="hobbies"/> Option4
+            <input type="checkbox" name ="hobbies"/> Option5
+
+            <!-- attach a file-->
+            <br/>
+            Choose an Attachment <input type="file"/>
+
+    
+            <!-- Text box to inpu7t-->
+            <br/>
+            Input your Comments <textarea rows="5" cols ="20" name="comments"></textarea>
+
+            <!-- dropdown menu-->
+            <br/>
+            Select a month:
+            <select name="Month">
+
+                <option value ="Oct">October</option>
+                <option value ="Nov">November</option>
+                <option value ="Dec">December</option>
+            </select>
+
+
+            <!-- multiple tag lets you select many options for drop down menu. use control to select many-->
+            <br/> <br/> <br/> <br/> <br/>
+            Select 1 or more months:
+            <select name="Month" multiple>
+
+                <option value ="Oct">October</option>
+                <option value ="Nov">November</option>
+                <option value ="Dec">December</option>
+            </select>
+
+
+            <!-- submitting form-->
+            <br/>
+           
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset"/>
+            <input type="get" value="Get"/>
+            <!-- when you select the submit, the data is supposed to send the data to the server for further processing-->
+
+
+
+
+        </form>
+    </body>
+
+
+</html>
